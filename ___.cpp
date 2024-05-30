@@ -30,5 +30,8 @@ int main(){
     cout<<"find duplicate in array: "<<endl;
     printarray(v);
 
+    printarray(v);
+    
+
 
 }
