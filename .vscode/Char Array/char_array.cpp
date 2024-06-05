@@ -70,7 +70,8 @@ int main(){
     cout<<"Enter your name: "<<endl;
     cin>>name;
 
-    // name[2]='\0';  // It introduce null character after 2nd index in the array 
+    // name[2]='\0';  // It introduce null character after 2nd index in the array.so it print until the null character only 
+                        //  :Null character tells where string is ended::
 
     cout<<"Here is Your  name: ";
     cout<<name<<endl;
@@ -95,6 +96,38 @@ int main(){
     cout<<"Character is: "<<tolowercase('c')<<endl;
     cout<<"Character is: "<<tolowercase('B')<<endl;
 
-    return 0;
 
+
+    
+
+
+
+    /////  ::::::::::::::          STRING        ::::::::::::::::::::            ////
+
+    string st= "Abhinav";
+    int num=st.length();
+    cout<<"lenght of string"<<num<<endl;  // length of string
+
+     // used to push elemnt into string
+    st.push_back('T'); 
+    cout<<st<<endl;
+
+    st.pop_back();      // used to remove elemnt from string
+
+    // char array print until null character 
+   char ch[10];
+   cin>>ch;
+   ch[2]='\0';
+   cout<<ch<<endl;
+
+
+   // string terminater or eleminates its character at null position 
+   string str="Abhinav";
+   str[2]='\0';
+   cout<<str;
+
+
+    return 0;
 }
+
+

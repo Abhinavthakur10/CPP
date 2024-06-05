@@ -1,37 +1,18 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
 using namespace std;
 
-int findduplicate(int arr[],int n){
-    std::vector<int> v;
-    for(int i=0; i<n-1; i++){
-       if( arr[i]==arr[i+1]){
-        int value=arr[i];
-        v.push_back(value);
-        
-       }
-    }
-    return v;
-
-
-
-}
-
-void printarray(vector< int> v){
-    for(int i=0; i<v.size(); i++){
-        cout<<v[i]<<" ";
+string reversestring(string st){
+    int s=0;
+    int e=st.length()-1;
+    while(s<e){
+        swap(st[s++], st[e--]);
     }
 }
 int main(){
 
-    int arr[5]={1,2,3,4,3};
-    vector<int> v;
-    findduplicate(arr,5);
-    cout<<"find duplicate in array: "<<endl;
-    printarray(v);
-
-    printarray(v);
-    
+    string st= "The sky is blue";
+    reversestring(st);
+    cout<<st;
 
 
 }
