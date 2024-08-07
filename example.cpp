@@ -1,7 +1,9 @@
 #include<iostream>
 using namespace std;
 
-void reversestring(string st){
+/*void reversestring(string st){
+
+
     int start=0;
     int end=st.length()-1;
     while(s<e){
@@ -32,3 +34,7 @@ int main(){
 
 
 }
+*/
+
+
+

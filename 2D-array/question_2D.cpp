@@ -102,34 +102,35 @@ vector<int> waveprint(vector<vector<int>>arr, int nrows, int mcols){
 
 */
 
-bool isprime(int n){
-    if(n<=1){
-        return false;
+//////////////////////                                 GCD/HCF --->gcd(a,b)-->gcd(a-b,b) or gcd(a%b,b)            ///////////////
 
-    }
-    int arr[6];
-    for(int i=2; i<n; i++){
-        if(n%2==0){
-            cin>>arr[i];
-            return false;
-            
-        }
-
-    }
-    cout<<"Array of non prime number is:"<<arr;
+int gcd(int a, int b){
+    if(a==0)
+    return b;
     
-    return true;
-}
-int main(){
-    int count=0;
-    int n;
-    cout<<"enter number:";
-    cin>>n;
-    for(int i=2; i<n; i++){
-        if(isprime(i)){
-            count++;
+    if(b==0)
+    return a;
+    
+    while(a!= b){
+
+        if(a>b){
+            a=a-b;
+        }
+        if(b>a){
+            b=b-a;
         }
 
     }
-    cout<<count;
+    return a;
+
+}
+
+int main(){
+    int a,b;
+    cout<<"Enter any two number to find theri gcd/hcf:"<<endl;
+    cin>>a>>b;
+
+    int ans=gcd(a,b);
+    cout<<"Here, is the gcd/hcf of numbers:"<< ans <<endl;
+
 }
