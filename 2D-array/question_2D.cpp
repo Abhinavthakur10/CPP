@@ -102,4 +102,34 @@ vector<int> waveprint(vector<vector<int>>arr, int nrows, int mcols){
 
 */
 
+bool isprime(int n){
+    if(n<=1){
+        return false;
 
+    }
+    int arr[6];
+    for(int i=2; i<n; i++){
+        if(n%2==0){
+            cin>>arr[i];
+            return false;
+            
+        }
+
+    }
+    cout<<"Array of non prime number is:"<<arr;
+    
+    return true;
+}
+int main(){
+    int count=0;
+    int n;
+    cout<<"enter number:";
+    cin>>n;
+    for(int i=2; i<n; i++){
+        if(isprime(i)){
+            count++;
+        }
+
+    }
+    cout<<count;
+}
