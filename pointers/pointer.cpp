@@ -6,7 +6,7 @@ int main(){
     
     cout<<num<<endl;
 
-    cout<<"address of num"<<&num<<endl;
+    cout<<"address of num -"<<&num<<endl;
 
     // create an pointer( pointer datatype should be same as to the variable pointer)
     int *ptr=&num;

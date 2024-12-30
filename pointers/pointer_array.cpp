@@ -44,7 +44,7 @@ int main(){
 
    int arr[10];
 
-// ERROR : not possible because the address assign to 0th value indicating by ((arr)) can not be changed
+// ERROR : it is not possible because the address assign to 0th value indicating by ((arr)) can not be changed
     // arr=arr+1; 
 
    int *ptr=&arr[0];
