@@ -1,9 +1,10 @@
 #include<iostream>
 using namespace std;
 
+/*
 int main(){
              /////////////////////////        pointer in integer array          ////////////////////////////////
-/*
+
     int arr[10]= {2,4,7,6};
 
     cout<< "address of first memory block is " <<arr <<endl;          // name of array index to its first element location
@@ -52,30 +53,66 @@ int main(){
    ptr=ptr +1; // it will move to next integer
    cout<< ptr << endl;
 
-*/
+
  
 
  ///////////////////////////////          pointer in   char  array         ////////////////////////////////////////////
 
-  int arr[5]= {1,2,3,4,5};
-    char ch[6]= "abcde";
+  // int arr[5]= {1,2,3,4,5};
+  //   char ch[6]= "abcde";
     
-    // cout acts different for both the integer and character array and character array pointer 
-    cout<< arr << endl;
-    // attention here 
-    cout<< ch << endl;
+  //   // cout acts different for both the integer and character array and character array pointer 
+  //   cout<< arr << endl;
+  //   // attention here 
+  //   cout<< ch << endl;
 
-    char *c = &ch[0]; 
-    // print entire string
+  //   char *c = &ch[0]; 
+  //   // print entire string
 
-    cout<< c<< endl;
+  //   cout<< c<< endl;
 
-    char temp ='z';
-    char *p=&temp;
+  //   char temp ='z';
+  //   char *p=&temp;
 
-    cout<< p << endl;
+  //   cout<< p << endl;
 
-    return 0; 
+  //   return 0; 
 
 
 } 
+
+*/
+
+//////////////////////////          FUNCTION WITH POINTER             /////////////////////////////////////
+
+int update(int *p){
+   
+  // p=p+1;    // value remains same in main function and does not update
+  *p=*p+1;
+}
+
+int getsum(int *arr,int n){
+  int sum=-0;
+  for(int i=0; i<n; i++){
+    sum= sum + arr[i];
+
+
+  }
+  return (sum);
+}
+
+int main(){
+  /*
+  int value= 5; 
+  int *p=&value;
+  
+  cout<< "Before: "  <<  *p;
+  update(p);
+
+  cout<< "after: " << *p;
+  */
+  
+  int arr[6]={4,5,6,8,3,4};
+
+  cout << "Sum is: " << getsum(arr+3,3) << endl;
+}
