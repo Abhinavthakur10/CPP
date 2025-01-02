@@ -34,7 +34,7 @@ int main(){
      int n=5; 
      cout<< "Before : " << n << endl;
 
-     update1(n);
+     update2(n);
 
      cout<< "after : " << n  << endl;
 }
