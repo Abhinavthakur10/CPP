@@ -15,7 +15,7 @@ int main(){
 
     
     
-}
+} 
 */
 
 void update(int **p2){
@@ -43,6 +43,9 @@ int main(){
     cout<< "after "<< i <<endl;
     cout<< "after"<< p << endl;
     cout<< "after"<< p2 <<endl;
+
+    cout << "hello world"<< endl;
+    
 
 
 
