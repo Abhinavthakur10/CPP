@@ -34,6 +34,7 @@ int main(){
 
 /////////////////////// fibonaci series ///////////
 
+/*
 int fib(int n){
     if (n==0)
         return 0;
@@ -53,6 +54,34 @@ int main(){
     cout<< "Your fibonaci number is : " << ans << endl;
 
 }
+*/
 
 
-/////////////////////////
+/////////////////////////   Stair problem ////////////////////////
+
+// find out the no. of ways to reach the stair if person can jump 2 stair and 1 stair at a time
+
+int count(int n){
+
+    //base case
+
+    if (n<0)
+    return 0;
+
+    if (n==0)
+    return 1;
+
+    return count(n-2)+count(n-1); // recursion relation 
+
+}
+
+int main(){
+
+    int n;
+    cin>>n;
+
+    int ans=count(n);
+
+    cout << "No. of ways to reach n stair : " << ans << endl;
+
+}
